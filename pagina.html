@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>40 Scripts Funcionales con Explicación</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            margin: 20px;
+        }
+        .script-block {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .script-block h2 {
+            margin-top: 0;
+        }
+        pre {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            overflow-x: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>40 Scripts Funcionales con Explicación</h1>
+</header>
+
+<div class="container">
+
+    <div class="script-block">
+        <h2>1. Script JavaScript - Contador de Clics</h2>
+        <p>Este script crea un botón que cuenta el número de veces que ha sido presionado.</p>
+        <pre><code>
+// Contador de clics en un botón
+let count = 0;
+function contarClicks() {
+    count++;
+    document.getElementById('contador').innerText = 'Has hecho clic ' + count + ' veces.';
+}
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>2. Script JavaScript - Alerta de Bienvenida</h2>
+        <p>Este script muestra una alerta de bienvenida cuando se carga la página.</p>
+        <pre><code>
+window.onload = function() {
+    alert('¡Bienvenido a mi página web!');
+}
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>3. Script Python - Sumar Dos Números</h2>
+        <p>Este script suma dos números y muestra el resultado.</p>
+        <pre><code>
+def sumar(a, b):
+    return a + b
+
+resultado = sumar(5, 3)
+print(f'La suma es: {resultado}')
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>4. Script Bash - Crear un Directorio</h2>
+        <p>Este script crea un nuevo directorio en el sistema.</p>
+        <pre><code>
+#!/bin/bash
+# Crear un nuevo directorio
+mkdir nuevo_directorio
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>5. Script CMD - Mostrar la Fecha y Hora</h2>
+        <p>Este script muestra la fecha y hora actual en la terminal.</p>
+        <pre><code>
+@echo off
+echo La fecha y hora actual es:
+echo %date% %time%
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>6. Script JavaScript - Cambiar Color de Fondo</h2>
+        <p>Este script cambia el color de fondo de la página al hacer clic en un botón.</p>
+        <pre><code>
+function cambiarColor() {
+    document.body.style.backgroundColor = 'lightblue';
+}
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>7. Script Python - Contar Palabras en un Texto</h2>
+        <p>Este script cuenta las palabras en una cadena de texto.</p>
+        <pre><code>
+texto = "Hola, estoy aprendiendo Python."
+palabras = texto.split()
+print(f'Número de palabras: {len(palabras)}')
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>8. Script Bash - Copiar un Archivo</h2>
+        <p>Este script copia un archivo de un directorio a otro.</p>
+        <pre><code>
+#!/bin/bash
+# Copiar un archivo
+cp archivo_origen.txt archivo_destino.txt
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>9. Script JavaScript - Cambiar Texto</h2>
+        <p>Este script cambia el texto de un elemento HTML cuando se hace clic en él.</p>
+        <pre><code>
+function cambiarTexto() {
+    document.getElementById('miTexto').innerText = '¡Texto cambiado!';
+}
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>10. Script Python - Leer un Archivo de Texto</h2>
+        <p>Este script lee el contenido de un archivo de texto y lo imprime.</p>
+        <pre><code>
+with open('archivo.txt', 'r') as file:
+    contenido = file.read()
+print(contenido)
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>11. Script CMD - Pingar un Dominio</h2>
+        <p>Este script verifica la conectividad con un dominio.</p>
+        <pre><code>
+@echo off
+ping google.com
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>12. Script JavaScript - Validar Email</h2>
+        <p>Este script valida el formato de un email ingresado por el usuario.</p>
+        <pre><code>
+function validarEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(String(email).toLowerCase());
+}
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>13. Script Python - Generar Números Aleatorios</h2>
+        <p>Este script genera un número aleatorio entre 1 y 100.</p>
+        <pre><code>
+import random
+numero_aleatorio = random.randint(1, 100)
+print(f'Número aleatorio: {numero_aleatorio}')
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>14. Script Bash - Mostrar Uso de Disco</h2>
+        <p>Este script muestra el uso de disco en el sistema.</p>
+        <pre><code>
+#!/bin/bash
+# Mostrar uso de disco
+df -h
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>15. Script CMD - Crear un Archivo de Texto</h2>
+        <p>Este script crea un nuevo archivo de texto.</p>
+        <pre><code>
+@echo off
+echo Este es un archivo de texto > nuevo_archivo.txt
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>16. Script JavaScript - Obtener la Hora Actual</h2>
+        <p>Este script muestra la hora actual en un elemento HTML.</p>
+        <pre><code>
+function mostrarHora() {
+    const fecha = new Date();
+    document.getElementById('hora').innerText = fecha.toLocaleTimeString();
+}
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>17. Script Python - Calcular Factorial</h2>
+        <p>Este script calcula el factorial de un número.</p>
+        <pre><code>
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+print(factorial(5))  # Output: 120
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>18. Script Bash - Descargar un Archivo</h2>
+        <p>Este script descarga un archivo desde una URL.</p>
+        <pre><code>
+#!/bin/bash
+# Descargar un archivo
+wget http://ejemplo.com/archivo.zip
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>19. Script CMD - Renombrar un Archivo</h2>
+        <p>Este script renombra un archivo existente.</p>
+        <pre><code>
+@echo off
+rename archivo_viejo.txt archivo_nuevo.txt
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>20. Script JavaScript - Mostrar Mensaje al Cerrar la Página</h2>
+        <p>Este script muestra un mensaje de confirmación al intentar cerrar la página.</p>
+        <pre><code>
+window.onbeforeunload = function() {
+    return '¿Estás seguro de que quieres salir?';
+}
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>21. Script Python - Comprobar si un Número es Primo</h2>
+        <p>Este script verifica si un número dado es primo.</p>
+        <pre><code>
+def es_primo(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+print(es_primo(7))  # Output: True
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>22. Script Bash - Listar Archivos en un Directorio</h2>
+        <p>Este script lista todos los archivos en el directorio actual.</p>
+        <pre><code>
+#!/bin/bash
+# Listar archivos
+ls -l
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>23. Script CMD - Ver la Configuración de IP</h2>
+        <p>Este script muestra la configuración de IP del sistema.</p>
+        <pre><code>
+@echo off
+ipconfig
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>24. Script JavaScript - Crear un Temporizador</h2>
+        <p>Este script crea un temporizador que cuenta hacia atrás desde 10 segundos.</p>
+        <pre><code>
+let tiempo = 10;
+const temporizador = setInterval(() => {
+    if (tiempo > 0) {
+        console.log(tiempo);
+        tiempo--;
+    } else {
+        clearInterval(temporizador);
+        console.log('¡Tiempo agotado!');
+    }
+}, 1000);
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>25. Script Python - Convertir Celsius a Fahrenheit</h2>
+        <p>Este script convierte grados Celsius a Fahrenheit.</p>
+        <pre><code>
+def celsius_a_fahrenheit(celsius):
+    return (celsius * 9/5) + 32
+
+print(celsius_a_fahrenheit(25))  # Output: 77.0
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>26. Script Bash - Buscar una Palabra en un Archivo</h2>
+        <p>Este script busca una palabra en un archivo de texto.</p>
+        <pre><code>
+#!/bin/bash
+# Buscar una palabra en un archivo
+grep 'palabra' archivo.txt
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>27. Script CMD - Ver Procesos en Ejecución</h2>
+        <p>Este script muestra todos los procesos en ejecución.</p>
+        <pre><code>
+@echo off
+tasklist
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>28. Script JavaScript - Validar Contraseña</h2>
+        <p>Este script valida si una contraseña tiene al menos 8 caracteres.</p>
+        <pre><code>
+function validarContrasena(contrasena) {
+    return contrasena.length >= 8;
+}
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>29. Script Python - Contar Letras en una Cadena</h2>
+        <p>Este script cuenta cuántas letras hay en una cadena de texto.</p>
+        <pre><code>
+texto = "Hola Mundo"
+contador = sum(1 for c in texto if c.isalpha())
+print(f'Número de letras: {contador}')
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>30. Script Bash - Mostrar la Hora Actual</h2>
+        <p>Este script muestra la hora actual del sistema.</p>
+        <pre><code>
+#!/bin/bash
+# Mostrar hora actual
+date +"%T"
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>31. Script CMD - Crear un Nuevo Usuario</h2>
+        <p>Este script crea un nuevo usuario en el sistema.</p>
+        <pre><code>
+@echo off
+net user nuevo_usuario contraseña /add
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>32. Script JavaScript - Crear un Elemento HTML</h2>
+        <p>Este script crea un nuevo elemento <div> en la página.</p>
+        <pre><code>
+const nuevoDiv = document.createElement('div');
+nuevoDiv.innerText = 'Soy un nuevo div!';
+document.body.appendChild(nuevoDiv);
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>33. Script Python - Filtrar Números Pares</h2>
+        <p>Este script filtra números pares de una lista.</p>
+        <pre><code>
+numeros = [1, 2, 3, 4, 5, 6]
+pares = list(filter(lambda x: x % 2 == 0, numeros))
+print(pares)  # Output: [2, 4, 6]
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>34. Script Bash - Cambiar Permisos de un Archivo</h2>
+        <p>Este script cambia los permisos de un archivo.</p>
+        <pre><code>
+#!/bin/bash
+# Cambiar permisos
+chmod 755 archivo.sh
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>35. Script CMD - Desactivar el Firewall</h2>
+        <p>Este script desactiva el firewall de Windows.</p>
+        <pre><code>
+@echo off
+netsh advfirewall set allprofiles state off
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>36. Script JavaScript - Leer un Input de Texto</h2>
+        <p>Este script obtiene el valor de un campo de texto al hacer clic en un botón.</p>
+        <pre><code>
+function leerInput() {
+    const valor = document.getElementById('miInput').value;
+    console.log(valor);
+}
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>37. Script Python - Obtener la Longitud de una Lista</h2>
+        <p>Este script obtiene la longitud de una lista.</p>
+        <pre><code>
+lista = [1, 2, 3, 4, 5]
+print(len(lista))  # Output: 5
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>38. Script Bash - Comprimir Archivos</h2>
+        <p>Este script comprime archivos en un archivo ZIP.</p>
+        <pre><code>
+#!/bin/bash
+# Comprimir archivos
+zip archivo_comprimido.zip archivo1.txt archivo2.txt
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>39. Script CMD - Crear un Punto de Restauración</h2>
+        <p>Este script crea un punto de restauración en Windows.</p>
+        <pre><code>
+@echo off
+powershell.exe -Command "Checkpoint-Computer -Description 'Punto de Restauración' -RestorePointType 'MODIFY_SETTINGS'"
+        </code></pre>
+    </div>
+
+    <div class="script-block">
+        <h2>40. Script JavaScript - Escribir en la Consola</h2>
+        <p>Este script escribe un mensaje en la consola del navegador.</p>
+        <pre><code>
+console.log('¡Hola, mundo desde JavaScript!');
+        </code></pre>
+    </div>
+
+</div>
+
+<p>Hola zanchesrubi soy santi sobrino</p>
+
+</body>
+</html>
